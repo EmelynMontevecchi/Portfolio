@@ -1,8 +1,3 @@
-/* ========================================
-   PORTFÓLIO - EMELYN MONTEVECHI
-   Data Analyst & BI Analyst
-======================================== */
-
 /* Variáveis */
 :root {
     --primary: #6366f1;
@@ -708,6 +703,40 @@ section {
 /* ========================================
    CERTIFICAÇÕES
 ======================================== */
+
+/* Agrupamento por categoria */
+.cert-category {
+    margin-bottom: 60px;
+}
+
+.cert-category:last-child {
+    margin-bottom: 0;
+}
+
+.cert-category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.cert-category-header h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.cert-category-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.15), transparent);
+}
+
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -996,6 +1025,10 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .cert-category-header h3 {
+        font-size: 0.85rem;
     }
 
     .footer-content {
